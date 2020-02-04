@@ -1,12 +1,9 @@
 const express = require('express')
-const bodyParser = require('body-parser')
 const cors =  require('cors')
 
 const app = express()
-let port = 3000
+let port = 80
 
-app.use(bodyParser.json())
-app.use(bodyParser.urlencoded({extended: true}))
 app.use(cors())
 
 app.listen(process.env.PORT || port, () => {
