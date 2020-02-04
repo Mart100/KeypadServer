@@ -12,6 +12,6 @@ app.listen(process.env.PORT || port, () => {
 
 app.get('/keypress', async (req, res, next) => {
   let key = req.query.key
-  console.log('yeet')
+  console.log('yeetkey: '+key)
   res.send('OK')
 })
