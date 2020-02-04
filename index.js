@@ -2,7 +2,7 @@ const express = require('express')
 const cors =  require('cors')
 
 const app = express()
-let port = 80
+let port = 3000
 
 app.use(cors())
 
